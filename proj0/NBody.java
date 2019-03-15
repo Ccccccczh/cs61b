@@ -64,9 +64,7 @@ public class NBody{
 
             StdDraw.picture(0, 0, imageToDraw,2, 2);
             for(Planet planet : planets){
-                String planetImg = "images/" + planet.imgFileName;
-                StdDraw.picture(planet.xxPos/5.00e+11+0.5, planet.yyPos/5.00e+11+0.5, planetImg);
-
+                planet.draw();
             }
             StdDraw.show(10);
         }
